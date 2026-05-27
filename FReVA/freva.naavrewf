@@ -1,0 +1,942 @@
+{
+  "chart": {
+    "offset": {
+      "x": -115.78,
+      "y": 110.25
+    },
+    "scale": 0.841,
+    "nodes": {
+      "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd": {
+        "id": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+        "position": {
+          "x": 478.4166564941406,
+          "y": 239
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "ch_path": {
+            "id": "ch_path",
+            "type": "right",
+            "properties": {
+              "color": "#2dbcd2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 13
+            }
+          },
+          "eta_path": {
+            "id": "eta_path",
+            "type": "right",
+            "properties": {
+              "color": "#2d2dd2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 39
+            }
+          },
+          "fl_path": {
+            "id": "fl_path",
+            "type": "right",
+            "properties": {
+              "color": "#79d2b2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 65
+            }
+          },
+          "gwp_path": {
+            "id": "gwp_path",
+            "type": "right",
+            "properties": {
+              "color": "#3e862d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 91
+            }
+          },
+          "n_I": {
+            "id": "n_I",
+            "type": "right",
+            "properties": {
+              "color": "#d279bf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 117
+            }
+          },
+          "n_J": {
+            "id": "n_J",
+            "type": "right",
+            "properties": {
+              "color": "#78543a",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 143
+            }
+          },
+          "objective_choice": {
+            "id": "objective_choice",
+            "type": "right",
+            "properties": {
+              "color": "#931f7e",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 169
+            }
+          },
+          "profit_path": {
+            "id": "profit_path",
+            "type": "right",
+            "properties": {
+              "color": "#703a78",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 195
+            }
+          },
+          "region": {
+            "id": "region",
+            "type": "right",
+            "properties": {
+              "color": "#53a8ac",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 221
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ffbf4ab1-5af8-4683-90f0-4b2b92b9a6e5/",
+            "owner": "sventesselaar",
+            "virtual_lab": "bgis-urban-planning",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/df6940b5-8ec2-4a56-9644-582173f4cef0/"
+              },
+              {
+                "version": 2,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ffbf4ab1-5af8-4683-90f0-4b2b92b9a6e5/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-build:v0.3.4",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-runtime:v0.3.4"
+            },
+            "dependencies": [
+              {
+                "name": "pandas",
+                "module": "",
+                "asname": "pd"
+              },
+              {
+                "name": "os",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "pickle",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "ch_path",
+                "type": "str"
+              },
+              {
+                "name": "eta_path",
+                "type": "str"
+              },
+              {
+                "name": "fl_path",
+                "type": "str"
+              },
+              {
+                "name": "gwp_path",
+                "type": "str"
+              },
+              {
+                "name": "n_I",
+                "type": "int"
+              },
+              {
+                "name": "n_J",
+                "type": "int"
+              },
+              {
+                "name": "objective_choice",
+                "type": "str"
+              },
+              {
+                "name": "profit_path",
+                "type": "str"
+              },
+              {
+                "name": "region",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [
+              {
+                "name": "param_input_xlsx_path",
+                "type": "str",
+                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/FL2CH_CN.xlsx"
+              },
+              {
+                "name": "param_num_chemicals",
+                "type": "int",
+                "default_value": "0"
+              },
+              {
+                "name": "param_num_fl_streams",
+                "type": "int",
+                "default_value": "0"
+              },
+              {
+                "name": "param_objective",
+                "type": "str",
+                "default_value": "profit"
+              },
+              {
+                "name": "param_region",
+                "type": "str",
+                "default_value": "CN"
+              }
+            ],
+            "secrets": [],
+            "title": "data-loader-freva-sventesselaar",
+            "description": "data-loader-freva-sventesselaar",
+            "created": "2026-05-27T10:35:36.075570Z",
+            "modified": "2026-05-27T10:35:37.007559Z",
+            "version": 2,
+            "container_image": "ghcr.io/naavre/cells-vl-bgis-urban-planning/data-loader-freva-sventesselaar:f5ca9c8",
+            "kernel": "ipython",
+            "source_url": "https://github.com/NaaVRE/cells-vl-bgis-urban-planning/tree/b519a70f8b75fbd16fdfa0558ae19292767bad33/data-loader-freva-sventesselaar",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 253,
+          "height": 236
+        }
+      },
+      "b35b94c1-d664-4204-8cc2-f0ae3a7b1453": {
+        "id": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+        "position": {
+          "x": 879.4166564941406,
+          "y": 100
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "ch_path": {
+            "id": "ch_path",
+            "type": "left",
+            "properties": {
+              "color": "#2dbcd2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "eta_path": {
+            "id": "eta_path",
+            "type": "left",
+            "properties": {
+              "color": "#2d2dd2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "fl_path": {
+            "id": "fl_path",
+            "type": "left",
+            "properties": {
+              "color": "#79d2b2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "gwp_path": {
+            "id": "gwp_path",
+            "type": "left",
+            "properties": {
+              "color": "#3e862d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 91
+            }
+          },
+          "n_I": {
+            "id": "n_I",
+            "type": "left",
+            "properties": {
+              "color": "#d279bf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 117
+            }
+          },
+          "n_J": {
+            "id": "n_J",
+            "type": "left",
+            "properties": {
+              "color": "#78543a",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 143
+            }
+          },
+          "objective_choice": {
+            "id": "objective_choice",
+            "type": "left",
+            "properties": {
+              "color": "#931f7e",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 169
+            }
+          },
+          "profit_path": {
+            "id": "profit_path",
+            "type": "left",
+            "properties": {
+              "color": "#703a78",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 195
+            }
+          },
+          "obj_value": {
+            "id": "obj_value",
+            "type": "right",
+            "properties": {
+              "color": "#9b79d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 65
+            }
+          },
+          "solution_path": {
+            "id": "solution_path",
+            "type": "right",
+            "properties": {
+              "color": "#931f78",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 91
+            }
+          },
+          "solver_status": {
+            "id": "solver_status",
+            "type": "right",
+            "properties": {
+              "color": "#53ac62",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 117
+            }
+          },
+          "term_condition": {
+            "id": "term_condition",
+            "type": "right",
+            "properties": {
+              "color": "#612d86",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 143
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ec1fda15-e4b2-4957-b2f4-b93c82e47b24/",
+            "owner": "sventesselaar",
+            "virtual_lab": "bgis-urban-planning",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ec1fda15-e4b2-4957-b2f4-b93c82e47b24/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-build:v0.3.4",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-runtime:v0.3.4"
+            },
+            "dependencies": [
+              {
+                "name": "ConcreteModel",
+                "module": "pyomo.environ",
+                "asname": null
+              },
+              {
+                "name": "RangeSet",
+                "module": "pyomo.environ",
+                "asname": null
+              },
+              {
+                "name": "Param",
+                "module": "pyomo.environ",
+                "asname": null
+              },
+              {
+                "name": "Var",
+                "module": "pyomo.environ",
+                "asname": null
+              },
+              {
+                "name": "Constraint",
+                "module": "pyomo.environ",
+                "asname": null
+              },
+              {
+                "name": "SolverFactory",
+                "module": "pyomo.environ",
+                "asname": null
+              },
+              {
+                "name": "NonNegativeReals",
+                "module": "pyomo.environ",
+                "asname": null
+              },
+              {
+                "name": "Objective",
+                "module": "pyomo.environ",
+                "asname": null
+              },
+              {
+                "name": "pickle",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "maximize",
+                "module": "pyomo.environ",
+                "asname": null
+              },
+              {
+                "name": "json",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "ch_path",
+                "type": "str"
+              },
+              {
+                "name": "eta_path",
+                "type": "str"
+              },
+              {
+                "name": "fl_path",
+                "type": "str"
+              },
+              {
+                "name": "gwp_path",
+                "type": "str"
+              },
+              {
+                "name": "n_I",
+                "type": "int"
+              },
+              {
+                "name": "n_J",
+                "type": "int"
+              },
+              {
+                "name": "objective_choice",
+                "type": "str"
+              },
+              {
+                "name": "profit_path",
+                "type": "str"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "obj_value",
+                "type": "float"
+              },
+              {
+                "name": "solution_path",
+                "type": "str"
+              },
+              {
+                "name": "solver_status",
+                "type": "str"
+              },
+              {
+                "name": "term_condition",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [],
+            "secrets": [],
+            "title": "solve-lp-sventesselaar",
+            "description": "solve-lp-sventesselaar",
+            "created": "2026-05-27T10:42:46.633429Z",
+            "modified": "2026-05-27T10:42:51.115605Z",
+            "version": 1,
+            "container_image": "ghcr.io/naavre/cells-vl-bgis-urban-planning/solve-lp-sventesselaar:a583034",
+            "kernel": "ipython",
+            "source_url": "https://github.com/NaaVRE/cells-vl-bgis-urban-planning/tree/43faedb9ba943aae55b4aa0824ac2e91841a8212/solve-lp-sventesselaar",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 253,
+          "height": 209
+        }
+      },
+      "26dbdc76-d1df-4e15-a95e-6b81fd1238bb": {
+        "id": "26dbdc76-d1df-4e15-a95e-6b81fd1238bb",
+        "position": {
+          "x": 1425.9175463663983,
+          "y": 392.092746730083
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "n_I": {
+            "id": "n_I",
+            "type": "left",
+            "properties": {
+              "color": "#d279bf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 13
+            }
+          },
+          "n_J": {
+            "id": "n_J",
+            "type": "left",
+            "properties": {
+              "color": "#78543a",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 39
+            }
+          },
+          "obj_value": {
+            "id": "obj_value",
+            "type": "left",
+            "properties": {
+              "color": "#9b79d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 65
+            }
+          },
+          "objective_choice": {
+            "id": "objective_choice",
+            "type": "left",
+            "properties": {
+              "color": "#931f7e",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 91
+            }
+          },
+          "region": {
+            "id": "region",
+            "type": "left",
+            "properties": {
+              "color": "#53a8ac",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 117
+            }
+          },
+          "solution_path": {
+            "id": "solution_path",
+            "type": "left",
+            "properties": {
+              "color": "#931f78",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 143
+            }
+          },
+          "solver_status": {
+            "id": "solver_status",
+            "type": "left",
+            "properties": {
+              "color": "#53ac62",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 169
+            }
+          },
+          "term_condition": {
+            "id": "term_condition",
+            "type": "left",
+            "properties": {
+              "color": "#612d86",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": -2,
+              "y": 195
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/222759a6-857c-4b90-ab31-f3202eef5785/",
+            "owner": "sventesselaar",
+            "virtual_lab": "bgis-urban-planning",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/a348c34e-a6de-468f-9547-79d4b94be1bd/"
+              },
+              {
+                "version": 2,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/8cedf8cd-3fb1-4d45-b8bf-f3e2f77012e6/"
+              },
+              {
+                "version": 3,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/1b268e18-b48e-4245-8e38-1f55218e55a7/"
+              },
+              {
+                "version": 4,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/222759a6-857c-4b90-ab31-f3202eef5785/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-build:v0.3.4",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-runtime:v0.3.4"
+            },
+            "dependencies": [
+              {
+                "name": "pandas",
+                "module": "",
+                "asname": "pd"
+              },
+              {
+                "name": "json",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [
+              {
+                "name": "n_I",
+                "type": "int"
+              },
+              {
+                "name": "n_J",
+                "type": "int"
+              },
+              {
+                "name": "obj_value",
+                "type": "float"
+              },
+              {
+                "name": "objective_choice",
+                "type": "str"
+              },
+              {
+                "name": "region",
+                "type": "str"
+              },
+              {
+                "name": "solution_path",
+                "type": "str"
+              },
+              {
+                "name": "solver_status",
+                "type": "str"
+              },
+              {
+                "name": "term_condition",
+                "type": "str"
+              }
+            ],
+            "outputs": [],
+            "confs": [],
+            "params": [
+              {
+                "name": "param_output_csv_path",
+                "type": "str",
+                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/freva_results.csv"
+              },
+              {
+                "name": "param_output_summary_path",
+                "type": "str",
+                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/freva_summary.json"
+              }
+            ],
+            "secrets": [],
+            "title": "results-writer-sventesselaar",
+            "description": "results-writer-sventesselaar",
+            "created": "2026-05-27T11:22:41.839718Z",
+            "modified": "2026-05-27T11:22:42.510059Z",
+            "version": 4,
+            "container_image": "ghcr.io/naavre/cells-vl-bgis-urban-planning/results-writer-sventesselaar:7e4a75f",
+            "kernel": "ipython",
+            "source_url": "https://github.com/NaaVRE/cells-vl-bgis-urban-planning/tree/fa3063ecb12bea708ff594a3ad37410e2051a146/results-writer-sventesselaar",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 253,
+          "height": 209
+        }
+      }
+    },
+    "links": {
+      "d21a360d-88e4-4bfe-96be-69be45114f9a": {
+        "id": "d21a360d-88e4-4bfe-96be-69be45114f9a",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "ch_path"
+        },
+        "to": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "ch_path"
+        }
+      },
+      "cb65aa38-5c42-424c-a78c-39de5e8628ba": {
+        "id": "cb65aa38-5c42-424c-a78c-39de5e8628ba",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "eta_path"
+        },
+        "to": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "eta_path"
+        }
+      },
+      "a30e7de3-d79b-4836-b253-58eab3aea29e": {
+        "id": "a30e7de3-d79b-4836-b253-58eab3aea29e",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "fl_path"
+        },
+        "to": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "fl_path"
+        }
+      },
+      "9d5a9ebf-a2b5-4d0d-a573-9e29a542419f": {
+        "id": "9d5a9ebf-a2b5-4d0d-a573-9e29a542419f",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "gwp_path"
+        },
+        "to": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "gwp_path"
+        }
+      },
+      "e956bfcf-c91f-4766-a3d1-11cf63d0dc9a": {
+        "id": "e956bfcf-c91f-4766-a3d1-11cf63d0dc9a",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "n_I"
+        },
+        "to": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "n_I"
+        }
+      },
+      "a850aa42-3433-46cf-a574-6f69ddeb08ba": {
+        "id": "a850aa42-3433-46cf-a574-6f69ddeb08ba",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "n_J"
+        },
+        "to": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "n_J"
+        }
+      },
+      "5f38b21e-62af-464a-8964-31d22ef7431a": {
+        "id": "5f38b21e-62af-464a-8964-31d22ef7431a",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "objective_choice"
+        },
+        "to": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "objective_choice"
+        }
+      },
+      "ade18c48-c752-4eed-a4ca-9a05b954f148": {
+        "id": "ade18c48-c752-4eed-a4ca-9a05b954f148",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "profit_path"
+        },
+        "to": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "profit_path"
+        }
+      },
+      "538149de-c96e-421c-827a-472003aa0e2c": {
+        "id": "538149de-c96e-421c-827a-472003aa0e2c",
+        "from": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "obj_value"
+        },
+        "to": {
+          "nodeId": "26dbdc76-d1df-4e15-a95e-6b81fd1238bb",
+          "portId": "obj_value"
+        }
+      },
+      "2092bb71-cbf1-4856-8cd3-9c79f4203265": {
+        "id": "2092bb71-cbf1-4856-8cd3-9c79f4203265",
+        "from": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "solution_path"
+        },
+        "to": {
+          "nodeId": "26dbdc76-d1df-4e15-a95e-6b81fd1238bb",
+          "portId": "solution_path"
+        }
+      },
+      "6c8f9a25-f97b-489e-8ee5-610a27c12f63": {
+        "id": "6c8f9a25-f97b-489e-8ee5-610a27c12f63",
+        "from": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "solver_status"
+        },
+        "to": {
+          "nodeId": "26dbdc76-d1df-4e15-a95e-6b81fd1238bb",
+          "portId": "solver_status"
+        }
+      },
+      "5f5b5afe-49f4-4048-8f09-70f0a4eeb7cc": {
+        "id": "5f5b5afe-49f4-4048-8f09-70f0a4eeb7cc",
+        "from": {
+          "nodeId": "b35b94c1-d664-4204-8cc2-f0ae3a7b1453",
+          "portId": "term_condition"
+        },
+        "to": {
+          "nodeId": "26dbdc76-d1df-4e15-a95e-6b81fd1238bb",
+          "portId": "term_condition"
+        }
+      },
+      "4a35d0f2-0413-453d-b6a0-02314bbdce12": {
+        "id": "4a35d0f2-0413-453d-b6a0-02314bbdce12",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "n_I"
+        },
+        "to": {
+          "nodeId": "26dbdc76-d1df-4e15-a95e-6b81fd1238bb",
+          "portId": "n_I"
+        }
+      },
+      "50a9ca7c-fda4-4508-9039-7f54a862d606": {
+        "id": "50a9ca7c-fda4-4508-9039-7f54a862d606",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "n_J"
+        },
+        "to": {
+          "nodeId": "26dbdc76-d1df-4e15-a95e-6b81fd1238bb",
+          "portId": "n_J"
+        }
+      },
+      "f121e8dc-ab89-4b37-bf1e-3ea7515ed5f3": {
+        "id": "f121e8dc-ab89-4b37-bf1e-3ea7515ed5f3",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "region"
+        },
+        "to": {
+          "nodeId": "26dbdc76-d1df-4e15-a95e-6b81fd1238bb",
+          "portId": "region"
+        }
+      },
+      "c7ecc715-bdec-4c1c-b6cc-43839d2ea2e6": {
+        "id": "c7ecc715-bdec-4c1c-b6cc-43839d2ea2e6",
+        "from": {
+          "nodeId": "2cc5b58e-3cf3-40f6-a26e-f3998e2221bd",
+          "portId": "objective_choice"
+        },
+        "to": {
+          "nodeId": "26dbdc76-d1df-4e15-a95e-6b81fd1238bb",
+          "portId": "objective_choice"
+        }
+      }
+    },
+    "selected": {},
+    "hovered": {}
+  }
+}
