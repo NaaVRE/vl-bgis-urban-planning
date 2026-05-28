@@ -1,163 +1,11 @@
 {
   "chart": {
     "offset": {
-      "x": 428.1,
-      "y": 449.77
+      "x": 387.48,
+      "y": 157.18
     },
-    "scale": 0.472,
+    "scale": 0.555,
     "nodes": {
-      "844b6829-4c81-46b0-a354-2a8f028b1a61": {
-        "id": "844b6829-4c81-46b0-a354-2a8f028b1a61",
-        "position": {
-          "x": 15.508367692876465,
-          "y": 277.1881838074398
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "catalog_path": {
-            "id": "catalog_path",
-            "type": "right",
-            "properties": {
-              "color": "#ad79d2",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 17
-            }
-          },
-          "gdf_path": {
-            "id": "gdf_path",
-            "type": "right",
-            "properties": {
-              "color": "#3a6a78",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 43
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/36ad24a4-3047-4a6c-bfef-5a2484ca3b97/",
-            "owner": "sventesselaar",
-            "virtual_lab": "bgis-urban-planning",
-            "shared_with_scopes": [],
-            "shared_with_users": [],
-            "versions": [
-              {
-                "version": 1,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/f5245d43-bf81-4825-971d-697942e0e125/"
-              },
-              {
-                "version": 2,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/5245b5b9-eb3c-4b62-b5ea-c6e1a35226d2/"
-              },
-              {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/e7e0e0d2-3b9f-4e9e-9c36-ed96c6070f0d/"
-              },
-              {
-                "version": 4,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/27469e83-ffcc-492b-8f66-a635e31fdd3e/"
-              },
-              {
-                "version": 5,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/0e289ef7-9d5c-4a0a-a404-66688e294052/"
-              },
-              {
-                "version": 6,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/6dfff7d9-0fa1-41fd-a12b-5d6a11c842b5/"
-              },
-              {
-                "version": 7,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/be7b8e94-b9b4-4f73-a397-d6f0cec60b2c/"
-              },
-              {
-                "version": 8,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/36ad24a4-3047-4a6c-bfef-5a2484ca3b97/"
-              }
-            ],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-build:v0.3.0",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-runtime:v0.3.0"
-            },
-            "dependencies": [
-              {
-                "name": "geopandas",
-                "module": "",
-                "asname": "gpd"
-              },
-              {
-                "name": "pandas",
-                "module": "",
-                "asname": "pd"
-              },
-              {
-                "name": "os",
-                "module": "",
-                "asname": null
-              },
-              {
-                "name": "pickle",
-                "module": "",
-                "asname": null
-              },
-              {
-                "name": "json",
-                "module": "",
-                "asname": null
-              },
-              {
-                "name": "ast",
-                "module": "",
-                "asname": null
-              }
-            ],
-            "inputs": [],
-            "outputs": [
-              {
-                "name": "catalog_path",
-                "type": "str"
-              },
-              {
-                "name": "gdf_path",
-                "type": "str"
-              }
-            ],
-            "confs": [],
-            "params": [
-              {
-                "name": "param_input_catalog_path",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/bgi_catalog_v1.xlsx"
-              },
-              {
-                "name": "param_input_gpkg_path",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-user-data/example_amsterdam_neighborhood.gpkg"
-              }
-            ],
-            "secrets": [],
-            "title": "data-loader-sventesselaar",
-            "description": "data-loader-sventesselaar",
-            "created": "2026-05-20T11:46:48.121976Z",
-            "modified": "2026-05-20T11:46:48.527138Z",
-            "version": 8,
-            "container_image": "ghcr.io/naavre/cells-vl-bgis-urban-planning/data-loader-sventesselaar:9ee6010",
-            "kernel": "ipython",
-            "source_url": "https://github.com/NaaVRE/cells-vl-bgis-urban-planning/tree/642c35be601c88f67ec15c6370d961f05d598aa0/data-loader-sventesselaar",
-            "is_draft": false
-          }
-        },
-        "size": {
-          "width": 253,
-          "height": 61
-        }
-      },
       "c1dc94ea-2df1-4431-b367-70d799c23e39": {
         "id": "c1dc94ea-2df1-4431-b367-70d799c23e39",
         "position": {
@@ -806,31 +654,137 @@
           "width": 253,
           "height": 61
         }
+      },
+      "5c057e79-61af-4641-8ad6-0e2a733a39c6": {
+        "id": "5c057e79-61af-4641-8ad6-0e2a733a39c6",
+        "position": {
+          "x": 0,
+          "y": 302.5720620842571
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "catalog_path": {
+            "id": "catalog_path",
+            "type": "right",
+            "properties": {
+              "color": "#ad79d2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 17
+            }
+          },
+          "gdf_path": {
+            "id": "gdf_path",
+            "type": "right",
+            "properties": {
+              "color": "#3a6a78",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 43
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/4e4ae543-e281-4bc4-a10e-0f4bba6355a2/",
+            "owner": "sventesselaar",
+            "virtual_lab": "bgis-urban-planning",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/57238ce0-0617-4896-ab19-90f86b144ff3/"
+              },
+              {
+                "version": 2,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/4e4ae543-e281-4bc4-a10e-0f4bba6355a2/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-build:v0.3.4",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-runtime:v0.3.4"
+            },
+            "dependencies": [
+              {
+                "name": "geopandas",
+                "module": "",
+                "asname": "gpd"
+              },
+              {
+                "name": "pandas",
+                "module": "",
+                "asname": "pd"
+              },
+              {
+                "name": "os",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "pickle",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "json",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "ast",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "catalog_path",
+                "type": "str"
+              },
+              {
+                "name": "gdf_path",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [
+              {
+                "name": "param_input_catalog_path",
+                "type": "str",
+                "default_value": "/home/jovyan/Cloud Storage/naa-vre-public/vl-bgis-urban-planning/bgi_catalog_v1.xlsx"
+              },
+              {
+                "name": "param_input_gpkg_path",
+                "type": "str",
+                "default_value": "/home/jovyan/Cloud Storage/naa-vre-public/vl-bgis-urban-planning/example_amsterdam_neighborhood.gpkg"
+              }
+            ],
+            "secrets": [],
+            "title": "data-loader-bgis-sventesselaar",
+            "description": "data-loader-bgis-sventesselaar",
+            "created": "2026-05-27T14:57:51.597080Z",
+            "modified": "2026-05-27T14:57:52.196933Z",
+            "version": 2,
+            "container_image": "ghcr.io/naavre/cells-vl-bgis-urban-planning/data-loader-bgis-sventesselaar:9ee6010",
+            "kernel": "ipython",
+            "source_url": "https://github.com/NaaVRE/cells-vl-bgis-urban-planning/tree/f160768333661c5c1f96972af85acd97ab1e96ae/data-loader-bgis-sventesselaar",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 253,
+          "height": 61
+        }
       }
     },
     "links": {
-      "dc194e48-3396-4ccb-94b0-5f74c953a366": {
-        "id": "dc194e48-3396-4ccb-94b0-5f74c953a366",
-        "from": {
-          "nodeId": "844b6829-4c81-46b0-a354-2a8f028b1a61",
-          "portId": "catalog_path"
-        },
-        "to": {
-          "nodeId": "c1dc94ea-2df1-4431-b367-70d799c23e39",
-          "portId": "catalog_path"
-        }
-      },
-      "03894753-2e2e-4d95-9fc6-75f871349ece": {
-        "id": "03894753-2e2e-4d95-9fc6-75f871349ece",
-        "from": {
-          "nodeId": "844b6829-4c81-46b0-a354-2a8f028b1a61",
-          "portId": "catalog_path"
-        },
-        "to": {
-          "nodeId": "1199e3b3-ed66-425c-a20d-b8a9dc38e661",
-          "portId": "catalog_path"
-        }
-      },
       "7c081ed5-0c80-4ccd-9d6e-6eb74415346b": {
         "id": "7c081ed5-0c80-4ccd-9d6e-6eb74415346b",
         "from": {
@@ -840,17 +794,6 @@
         "to": {
           "nodeId": "c1dc94ea-2df1-4431-b367-70d799c23e39",
           "portId": "mask_path"
-        }
-      },
-      "592d9e9f-0b58-45c4-b212-87651ce84c01": {
-        "id": "592d9e9f-0b58-45c4-b212-87651ce84c01",
-        "from": {
-          "nodeId": "844b6829-4c81-46b0-a354-2a8f028b1a61",
-          "portId": "gdf_path"
-        },
-        "to": {
-          "nodeId": "52bcff9f-203d-4766-bec3-543f0dd47284",
-          "portId": "gdf_path"
         }
       },
       "8dc3a52a-9e0c-449f-8fbd-b568791c48da": {
@@ -886,10 +829,43 @@
           "portId": "feasibility_output_path"
         }
       },
-      "86e21b1c-7461-4712-8c07-6a3f6185b1ae": {
-        "id": "86e21b1c-7461-4712-8c07-6a3f6185b1ae",
+      "e2b3a4e0-b65a-47b5-b118-1a9a1fe0bdf2": {
+        "id": "e2b3a4e0-b65a-47b5-b118-1a9a1fe0bdf2",
         "from": {
-          "nodeId": "844b6829-4c81-46b0-a354-2a8f028b1a61",
+          "nodeId": "5c057e79-61af-4641-8ad6-0e2a733a39c6",
+          "portId": "gdf_path"
+        },
+        "to": {
+          "nodeId": "52bcff9f-203d-4766-bec3-543f0dd47284",
+          "portId": "gdf_path"
+        }
+      },
+      "8691b46f-b59b-47a9-ad03-a1f63222cf91": {
+        "id": "8691b46f-b59b-47a9-ad03-a1f63222cf91",
+        "from": {
+          "nodeId": "5c057e79-61af-4641-8ad6-0e2a733a39c6",
+          "portId": "catalog_path"
+        },
+        "to": {
+          "nodeId": "c1dc94ea-2df1-4431-b367-70d799c23e39",
+          "portId": "catalog_path"
+        }
+      },
+      "250de0b5-731e-4630-9e8e-b71337ab1cc2": {
+        "id": "250de0b5-731e-4630-9e8e-b71337ab1cc2",
+        "from": {
+          "nodeId": "5c057e79-61af-4641-8ad6-0e2a733a39c6",
+          "portId": "catalog_path"
+        },
+        "to": {
+          "nodeId": "1199e3b3-ed66-425c-a20d-b8a9dc38e661",
+          "portId": "catalog_path"
+        }
+      },
+      "7ffffb1d-7365-4fd6-aa7c-2b102c898abe": {
+        "id": "7ffffb1d-7365-4fd6-aa7c-2b102c898abe",
+        "from": {
+          "nodeId": "5c057e79-61af-4641-8ad6-0e2a733a39c6",
           "portId": "catalog_path"
         },
         "to": {
