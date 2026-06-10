@@ -1,260 +1,16 @@
 {
   "chart": {
     "offset": {
-      "x": 94.24,
-      "y": -6.11
+      "x": 294.97,
+      "y": 177.2
     },
-    "scale": 0.795,
+    "scale": 0.477,
     "nodes": {
-      "7e54ad01-8172-4b4f-920c-9641983bdcff": {
-        "id": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-        "position": {
-          "x": 309.72327508521363,
-          "y": 521.3320463320464
-        },
-        "orientation": 0,
-        "type": "workflow-cell",
-        "ports": {
-          "ch_path": {
-            "id": "ch_path",
-            "type": "right",
-            "properties": {
-              "color": "#2dbcd2",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 13
-            }
-          },
-          "eta_path": {
-            "id": "eta_path",
-            "type": "right",
-            "properties": {
-              "color": "#2d2dd2",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 39
-            }
-          },
-          "fl_path": {
-            "id": "fl_path",
-            "type": "right",
-            "properties": {
-              "color": "#79d2b2",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 65
-            }
-          },
-          "gwp_path": {
-            "id": "gwp_path",
-            "type": "right",
-            "properties": {
-              "color": "#3e862d",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 91
-            }
-          },
-          "n_I": {
-            "id": "n_I",
-            "type": "right",
-            "properties": {
-              "color": "#d279bf",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 117
-            }
-          },
-          "n_J": {
-            "id": "n_J",
-            "type": "right",
-            "properties": {
-              "color": "#78543a",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 143
-            }
-          },
-          "objective_choice": {
-            "id": "objective_choice",
-            "type": "right",
-            "properties": {
-              "color": "#931f7e",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 169
-            }
-          },
-          "profit_path": {
-            "id": "profit_path",
-            "type": "right",
-            "properties": {
-              "color": "#703a78",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 195
-            }
-          },
-          "region": {
-            "id": "region",
-            "type": "right",
-            "properties": {
-              "color": "#53a8ac",
-              "parentNodeType": "workflow-cell"
-            },
-            "position": {
-              "x": 253,
-              "y": 221
-            }
-          }
-        },
-        "properties": {
-          "cell": {
-            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/236a5526-8867-4f94-b1b4-d2d466c50ba6/",
-            "owner": "sventesselaar",
-            "virtual_lab": "bgis-urban-planning",
-            "shared_with_scopes": [],
-            "shared_with_users": [],
-            "versions": [
-              {
-                "version": 1,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/df6940b5-8ec2-4a56-9644-582173f4cef0/"
-              },
-              {
-                "version": 2,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ffbf4ab1-5af8-4683-90f0-4b2b92b9a6e5/"
-              },
-              {
-                "version": 3,
-                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/236a5526-8867-4f94-b1b4-d2d466c50ba6/"
-              }
-            ],
-            "base_container_image": {
-              "build": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-build:v0.3.4",
-              "runtime": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-runtime:v0.3.4"
-            },
-            "dependencies": [
-              {
-                "name": "pandas",
-                "module": "",
-                "asname": "pd"
-              },
-              {
-                "name": "os",
-                "module": "",
-                "asname": null
-              },
-              {
-                "name": "pickle",
-                "module": "",
-                "asname": null
-              }
-            ],
-            "inputs": [],
-            "outputs": [
-              {
-                "name": "ch_path",
-                "type": "str"
-              },
-              {
-                "name": "eta_path",
-                "type": "str"
-              },
-              {
-                "name": "fl_path",
-                "type": "str"
-              },
-              {
-                "name": "gwp_path",
-                "type": "str"
-              },
-              {
-                "name": "n_I",
-                "type": "int"
-              },
-              {
-                "name": "n_J",
-                "type": "int"
-              },
-              {
-                "name": "objective_choice",
-                "type": "str"
-              },
-              {
-                "name": "profit_path",
-                "type": "str"
-              },
-              {
-                "name": "region",
-                "type": "str"
-              }
-            ],
-            "confs": [],
-            "params": [
-              {
-                "name": "param_input_xlsx_path",
-                "type": "str",
-                "default_value": "/home/jovyan/Cloud Storage/naa-vre-public/vl-bgis-urban-planning/FL2CH_CN.xlsx"
-              },
-              {
-                "name": "param_num_chemicals",
-                "type": "int",
-                "default_value": "0"
-              },
-              {
-                "name": "param_num_fl_streams",
-                "type": "int",
-                "default_value": "0"
-              },
-              {
-                "name": "param_objective",
-                "type": "str",
-                "default_value": "profit"
-              },
-              {
-                "name": "param_region",
-                "type": "str",
-                "default_value": "CN"
-              }
-            ],
-            "secrets": [],
-            "title": "data-loader-freva-sventesselaar",
-            "description": "data-loader-freva-sventesselaar",
-            "created": "2026-05-27T14:30:44.886006Z",
-            "modified": "2026-05-27T14:30:46.080187Z",
-            "version": 3,
-            "container_image": "ghcr.io/naavre/cells-vl-bgis-urban-planning/data-loader-freva-sventesselaar:f5ca9c8",
-            "kernel": "ipython",
-            "source_url": "https://github.com/NaaVRE/cells-vl-bgis-urban-planning/tree/a0dc5c56090e017d9ca9af3e3cfc6c8e45cacc9c/data-loader-freva-sventesselaar",
-            "is_draft": false
-          }
-        },
-        "size": {
-          "width": 253,
-          "height": 236
-        }
-      },
       "fbaa4c34-3bcc-4bae-81f9-9f6505820f27": {
         "id": "fbaa4c34-3bcc-4bae-81f9-9f6505820f27",
         "position": {
-          "x": 1596.057694242412,
-          "y": 619.3826442058764
+          "x": 1593.9612581837118,
+          "y": 615.189772088476
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -469,8 +225,8 @@
       "f2b08aec-011c-4b0c-aca1-7f695d60ef26": {
         "id": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
         "position": {
-          "x": 903.1883905459374,
-          "y": 308.7706146926538
+          "x": 944.697824508202,
+          "y": 258.45614928384845
         },
         "orientation": 0,
         "type": "workflow-cell",
@@ -764,141 +520,247 @@
           "width": 253,
           "height": 209
         }
+      },
+      "27d32091-87ea-495a-b874-5dce3995020c": {
+        "id": "27d32091-87ea-495a-b874-5dce3995020c",
+        "position": {
+          "x": 287.04601216393644,
+          "y": 340.7440044232496
+        },
+        "orientation": 0,
+        "type": "workflow-cell",
+        "ports": {
+          "ch_path": {
+            "id": "ch_path",
+            "type": "right",
+            "properties": {
+              "color": "#2dbcd2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 13
+            }
+          },
+          "eta_path": {
+            "id": "eta_path",
+            "type": "right",
+            "properties": {
+              "color": "#2d2dd2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 39
+            }
+          },
+          "fl_path": {
+            "id": "fl_path",
+            "type": "right",
+            "properties": {
+              "color": "#79d2b2",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 65
+            }
+          },
+          "gwp_path": {
+            "id": "gwp_path",
+            "type": "right",
+            "properties": {
+              "color": "#3e862d",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 91
+            }
+          },
+          "n_I": {
+            "id": "n_I",
+            "type": "right",
+            "properties": {
+              "color": "#d279bf",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 117
+            }
+          },
+          "n_J": {
+            "id": "n_J",
+            "type": "right",
+            "properties": {
+              "color": "#78543a",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 143
+            }
+          },
+          "objective_choice": {
+            "id": "objective_choice",
+            "type": "right",
+            "properties": {
+              "color": "#931f7e",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 169
+            }
+          },
+          "profit_path": {
+            "id": "profit_path",
+            "type": "right",
+            "properties": {
+              "color": "#703a78",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 195
+            }
+          },
+          "region": {
+            "id": "region",
+            "type": "right",
+            "properties": {
+              "color": "#53a8ac",
+              "parentNodeType": "workflow-cell"
+            },
+            "position": {
+              "x": 253,
+              "y": 221
+            }
+          }
+        },
+        "properties": {
+          "cell": {
+            "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/89ca0479-3748-44d6-af73-6dad56814124/",
+            "owner": "sventesselaar",
+            "virtual_lab": "bgis-urban-planning",
+            "shared_with_scopes": [],
+            "shared_with_users": [],
+            "versions": [
+              {
+                "version": 1,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/df6940b5-8ec2-4a56-9644-582173f4cef0/"
+              },
+              {
+                "version": 2,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/ffbf4ab1-5af8-4683-90f0-4b2b92b9a6e5/"
+              },
+              {
+                "version": 3,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/236a5526-8867-4f94-b1b4-d2d466c50ba6/"
+              },
+              {
+                "version": 4,
+                "url": "https://beta.naavre.net/naavre-catalogue-service/workflow-cells/89ca0479-3748-44d6-af73-6dad56814124/"
+              }
+            ],
+            "base_container_image": {
+              "build": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-build:v0.3.5",
+              "runtime": "ghcr.io/naavre/flavors/naavre-fl-bgis-urban-planning-cell-runtime:v0.3.5"
+            },
+            "dependencies": [
+              {
+                "name": "pandas",
+                "module": "",
+                "asname": "pd"
+              },
+              {
+                "name": "os",
+                "module": "",
+                "asname": null
+              },
+              {
+                "name": "pickle",
+                "module": "",
+                "asname": null
+              }
+            ],
+            "inputs": [],
+            "outputs": [
+              {
+                "name": "ch_path",
+                "type": "str"
+              },
+              {
+                "name": "eta_path",
+                "type": "str"
+              },
+              {
+                "name": "fl_path",
+                "type": "str"
+              },
+              {
+                "name": "gwp_path",
+                "type": "str"
+              },
+              {
+                "name": "n_I",
+                "type": "int"
+              },
+              {
+                "name": "n_J",
+                "type": "int"
+              },
+              {
+                "name": "objective_choice",
+                "type": "str"
+              },
+              {
+                "name": "profit_path",
+                "type": "str"
+              },
+              {
+                "name": "region",
+                "type": "str"
+              }
+            ],
+            "confs": [],
+            "params": [
+              {
+                "name": "param_input_xlsx_path",
+                "type": "str",
+                "default_value": "/home/jovyan/Cloud Storage/naa-vre-public/vl-bgis-urban-planning/FL2CH_CN.xlsx"
+              },
+              {
+                "name": "param_objective",
+                "type": "str",
+                "default_value": "profit"
+              },
+              {
+                "name": "param_region",
+                "type": "str",
+                "default_value": "CN"
+              }
+            ],
+            "secrets": [],
+            "title": "data-loader-freva-sventesselaar",
+            "description": "data-loader-freva-sventesselaar",
+            "created": "2026-06-10T10:51:30.557431Z",
+            "modified": "2026-06-10T10:51:31.343454Z",
+            "version": 4,
+            "container_image": "ghcr.io/naavre/cells-vl-bgis-urban-planning/data-loader-freva-sventesselaar:fbb416e",
+            "kernel": "ipython",
+            "source_url": "https://github.com/NaaVRE/cells-vl-bgis-urban-planning/tree/8863005f4f6573e69addd0e6b92e103a72ab7e19/data-loader-freva-sventesselaar",
+            "is_draft": false
+          }
+        },
+        "size": {
+          "width": 253,
+          "height": 236
+        }
       }
     },
     "links": {
-      "783158be-572a-4f65-8b5d-d0614221fae5": {
-        "id": "783158be-572a-4f65-8b5d-d0614221fae5",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "n_I"
-        },
-        "to": {
-          "nodeId": "fbaa4c34-3bcc-4bae-81f9-9f6505820f27",
-          "portId": "n_I"
-        }
-      },
-      "951d40f7-8e51-4f90-8d46-d2c1ebffb1da": {
-        "id": "951d40f7-8e51-4f90-8d46-d2c1ebffb1da",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "n_J"
-        },
-        "to": {
-          "nodeId": "fbaa4c34-3bcc-4bae-81f9-9f6505820f27",
-          "portId": "n_J"
-        }
-      },
-      "29b7266b-cd07-4895-bc18-ddeec802c308": {
-        "id": "29b7266b-cd07-4895-bc18-ddeec802c308",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "region"
-        },
-        "to": {
-          "nodeId": "fbaa4c34-3bcc-4bae-81f9-9f6505820f27",
-          "portId": "region"
-        }
-      },
-      "0c115141-c1a9-4441-8279-0d748acb287f": {
-        "id": "0c115141-c1a9-4441-8279-0d748acb287f",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "objective_choice"
-        },
-        "to": {
-          "nodeId": "fbaa4c34-3bcc-4bae-81f9-9f6505820f27",
-          "portId": "objective_choice"
-        }
-      },
-      "9d3f1f07-91a5-44a9-893d-ed3a4136c5cd": {
-        "id": "9d3f1f07-91a5-44a9-893d-ed3a4136c5cd",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "ch_path"
-        },
-        "to": {
-          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
-          "portId": "ch_path"
-        }
-      },
-      "f8847d00-0eb8-40f4-9dad-ebb5f2a6efcf": {
-        "id": "f8847d00-0eb8-40f4-9dad-ebb5f2a6efcf",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "eta_path"
-        },
-        "to": {
-          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
-          "portId": "eta_path"
-        }
-      },
-      "4b4ce836-f591-4606-9c88-f3444390756a": {
-        "id": "4b4ce836-f591-4606-9c88-f3444390756a",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "fl_path"
-        },
-        "to": {
-          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
-          "portId": "fl_path"
-        }
-      },
-      "e20fbba7-442d-435d-b541-dd9b69660b9f": {
-        "id": "e20fbba7-442d-435d-b541-dd9b69660b9f",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "gwp_path"
-        },
-        "to": {
-          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
-          "portId": "gwp_path"
-        }
-      },
-      "30aec76e-7d5e-4499-a1ba-857316dd2464": {
-        "id": "30aec76e-7d5e-4499-a1ba-857316dd2464",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "n_I"
-        },
-        "to": {
-          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
-          "portId": "n_I"
-        }
-      },
-      "2d8733c1-b4f1-4a75-a19e-9daa1675f9e0": {
-        "id": "2d8733c1-b4f1-4a75-a19e-9daa1675f9e0",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "n_J"
-        },
-        "to": {
-          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
-          "portId": "n_J"
-        }
-      },
-      "4a418323-abe9-4813-837e-ba35f7568c85": {
-        "id": "4a418323-abe9-4813-837e-ba35f7568c85",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "objective_choice"
-        },
-        "to": {
-          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
-          "portId": "objective_choice"
-        }
-      },
-      "68a915b1-aacd-4838-8228-60e68376937f": {
-        "id": "68a915b1-aacd-4838-8228-60e68376937f",
-        "from": {
-          "nodeId": "7e54ad01-8172-4b4f-920c-9641983bdcff",
-          "portId": "profit_path"
-        },
-        "to": {
-          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
-          "portId": "profit_path"
-        }
-      },
       "e47b5c48-931b-45c7-8661-060df5930d3b": {
         "id": "e47b5c48-931b-45c7-8661-060df5930d3b",
         "from": {
@@ -941,6 +803,138 @@
         "to": {
           "nodeId": "fbaa4c34-3bcc-4bae-81f9-9f6505820f27",
           "portId": "obj_value"
+        }
+      },
+      "a6197e03-8d81-4620-a3ea-bdefc5f11509": {
+        "id": "a6197e03-8d81-4620-a3ea-bdefc5f11509",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "ch_path"
+        },
+        "to": {
+          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
+          "portId": "ch_path"
+        }
+      },
+      "a586c973-6834-4566-aab0-078025fdfc22": {
+        "id": "a586c973-6834-4566-aab0-078025fdfc22",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "eta_path"
+        },
+        "to": {
+          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
+          "portId": "eta_path"
+        }
+      },
+      "935dea90-3655-44b2-aa89-ecc5489283a2": {
+        "id": "935dea90-3655-44b2-aa89-ecc5489283a2",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "fl_path"
+        },
+        "to": {
+          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
+          "portId": "fl_path"
+        }
+      },
+      "353e84ae-6c5f-44c4-bdc5-a12bdca109c6": {
+        "id": "353e84ae-6c5f-44c4-bdc5-a12bdca109c6",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "gwp_path"
+        },
+        "to": {
+          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
+          "portId": "gwp_path"
+        }
+      },
+      "7b8c1c90-ee9d-45a5-9d9d-a5d5354d95c7": {
+        "id": "7b8c1c90-ee9d-45a5-9d9d-a5d5354d95c7",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "n_I"
+        },
+        "to": {
+          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
+          "portId": "n_I"
+        }
+      },
+      "3e55cb27-d782-4e90-b98f-286b50ed5565": {
+        "id": "3e55cb27-d782-4e90-b98f-286b50ed5565",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "n_J"
+        },
+        "to": {
+          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
+          "portId": "n_J"
+        }
+      },
+      "bf511744-23dc-47fa-886b-9e118f863602": {
+        "id": "bf511744-23dc-47fa-886b-9e118f863602",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "objective_choice"
+        },
+        "to": {
+          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
+          "portId": "objective_choice"
+        }
+      },
+      "36525f60-f806-4026-a0a5-abdd681c6a29": {
+        "id": "36525f60-f806-4026-a0a5-abdd681c6a29",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "profit_path"
+        },
+        "to": {
+          "nodeId": "f2b08aec-011c-4b0c-aca1-7f695d60ef26",
+          "portId": "profit_path"
+        }
+      },
+      "98aeafa1-0855-40c9-9a09-b6997243ec72": {
+        "id": "98aeafa1-0855-40c9-9a09-b6997243ec72",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "n_I"
+        },
+        "to": {
+          "nodeId": "fbaa4c34-3bcc-4bae-81f9-9f6505820f27",
+          "portId": "n_I"
+        }
+      },
+      "118f9929-599b-44af-90c6-db006df10831": {
+        "id": "118f9929-599b-44af-90c6-db006df10831",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "n_J"
+        },
+        "to": {
+          "nodeId": "fbaa4c34-3bcc-4bae-81f9-9f6505820f27",
+          "portId": "n_J"
+        }
+      },
+      "0d037177-d6d4-4d23-9df9-a0fd970ab352": {
+        "id": "0d037177-d6d4-4d23-9df9-a0fd970ab352",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "objective_choice"
+        },
+        "to": {
+          "nodeId": "fbaa4c34-3bcc-4bae-81f9-9f6505820f27",
+          "portId": "objective_choice"
+        }
+      },
+      "764ad754-691a-40b8-8330-6e51bcc2f33a": {
+        "id": "764ad754-691a-40b8-8330-6e51bcc2f33a",
+        "from": {
+          "nodeId": "27d32091-87ea-495a-b874-5dce3995020c",
+          "portId": "region"
+        },
+        "to": {
+          "nodeId": "fbaa4c34-3bcc-4bae-81f9-9f6505820f27",
+          "portId": "region"
         }
       }
     },
