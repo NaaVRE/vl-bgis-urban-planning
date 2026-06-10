@@ -40,8 +40,6 @@ These can be changed at workflow runtime:
 | `param_input_xlsx_path` | `naa-vre-public/.../FL2CH_CN.xlsx` | Path to FL2CH Excel input |
 | `param_region` | `CN` | `CN`, `EU`, or `US`. Used in the summary output and as a fallback for path resolution when `param_input_xlsx_path` is empty. |
 | `param_objective` | `profit` | `profit` or `gwp` |
-| `param_num_fl_streams` | `0` | Number of food-loss streams. `0` means auto-detect from the sheet. |
-| `param_num_chemicals` | `0` | Number of chemicals. `0` means auto-detect from the sheet. |
 | `param_output_csv_path` | `naa-vre-user-data/freva_results.csv` | Allocation flows output |
 | `param_output_summary_path` | `naa-vre-user-data/freva_summary.json` | Solver summary output |
 
