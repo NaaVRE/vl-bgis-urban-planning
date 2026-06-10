@@ -17,9 +17,6 @@ Open the Virtual Lab in your browser and log in:
 
 <https://beta.naavre.net/vreapp/vl/bgis-urban-planning>
 
-You need to be a member of the `bgis-urban-planning` Virtual Lab. If the link does not
-open, or you cannot log in, email Sven (address at the bottom) to be added.
-
 Once you are in, you are looking at a JupyterLab environment with a file browser on the
 left. The workflow files and the sample data are reachable from here.
 
@@ -36,8 +33,7 @@ connected.
 
 ## 3. Run it
 
-The **Run** control is at the top of the workflow editor. This is the step most people
-miss on their first try, so look along the top toolbar of the editor pane.
+The **Run** control is at the top of the workflow editor. Look along the top toolbar of the editor pane.
 
 ![The Run button at the top of the workflow editor](docs/img/run_button.png)
 
@@ -133,16 +129,6 @@ run its own output path also avoids this.
 mount the displayed modification time is not always updated when a file is overwritten
 with the same name. The file contents are still written. Trust the contents, not the
 timestamp.
-
-## Screenshots to add
-
-This file references five images under `docs/img/`. Capture them once and commit them:
-
-- `workflow_editor.png` (the workflow open in the editor)
-- `run_button.png` (the toolbar with the Run control, ideally circled)
-- `parameter_dialog.png` (the parameter dialog)
-- `workflow_engine_complete.png` (a finished run, all nodes green)
-- and reuse the canvas figures from the thesis if you have them to hand
 
 ## Contact
 
